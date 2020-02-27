@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+<<<<<<< HEAD
 import './Style/menu.css'
 import ThemeContext from './context/ThemeContext';
 import {BrowserRouter as Router,NavLink} from 'react-router-dom';
@@ -33,11 +34,56 @@ export default function  Menu() {
                         </NavLink></li>
 
                         <button 
+=======
+import './menu.css'
+import ThemeContext from '../context/ThemeContext';
+export default function  Menu() {
+  const {toggle } = useContext(ThemeContext);
+
+
+  return (
+    <div className="menu">
+      <div className="dropdown">
+        <button className="dropbtn">Home
+      <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          {/* <a href="#">Link 1</a> */}
+        </div>
+      </div>
+      <div className="dropdown">
+        <button className="dropbtn">Services
+      <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          <a href="#">Service 1</a>
+          <a href="#">Service 2</a>
+        </div>
+      </div>
+      <div className="dropdown">
+        <button className="dropbtn">Product
+      <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          <a href="#">Product 1</a>
+          <a href="#">Product 2</a>
+        </div>
+      </div>
+      <div className="dropdown">
+        <button className="dropbtn">Contact
+      <i className="fa fa-caret-down"></i>
+        </button>
+        
+      </div>
+      <div>
+      <button 
+>>>>>>> ad17399a6715572ad0e96aa95c7d731daa6714a0
       className="dropbtn button1"
       onClick={() => toggle()}
     >
       ChangeTheme
     </button>
+<<<<<<< HEAD
                         </div>
                     
                    </ul>
@@ -54,6 +100,8 @@ export default function  Menu() {
             
       <div>
       
+=======
+>>>>>>> ad17399a6715572ad0e96aa95c7d731daa6714a0
       </div>
 
     </div>
